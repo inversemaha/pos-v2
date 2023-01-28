@@ -38,7 +38,7 @@
             <form class="form-horizontal m-t-20" action="/login-check" method="post">
                 <div class="form-group ">
                     <div class="col-12">
-                        <input class="form-control" type="email" required="" value="" name="user_email"
+                        <input class="form-control" type="email" required="" value="admin@gmail.com" name="user_email"
                                placeholder="Email">
                         <input class="form-control" type="hidden" value="{{csrf_token()}}" name="_token">
                     </div>

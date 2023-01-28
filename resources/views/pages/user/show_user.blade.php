@@ -36,7 +36,7 @@
                     </div>
                     <div class="col-sm-6">
                         <a href="/user/create" class="btn btn-sm btn-primary pull-right"><i
-                                    class="md md-add"></i> Add New</a>
+                                class="md md-add"></i> Add New</a>
                     </div>
                 </div>
 
@@ -68,23 +68,25 @@
                                 <td><img src="/images/user/{{ $res->user_image }}" class="img-rounded"
                                          alt="User image" width="100"></td>
                                 <td>{{$res->user_phone}}</td>
-                               <td>
-                                   @if($res->user_type==1)
-                                       Admin
-                                   @else
-                                       Operator
-                                   @endif
-                               </td>
+                                <td>
+                                    @if($res->user_type==1)
+                                        Admin
+                                    @elseif($res->user_type==2)
+                                        Operator
+                                    @else
+                                        Seller
+                                    @endif
+                                </td>
                                 <td>{{$res->user_company}}</td>
                                 <td>
                                     <button type="button"
                                             class="btn btn-sm btn-danger dropdown-toggle waves-effect waves-light"
                                             data-toggle="dropdown" aria-expanded="false">Action<span
-                                                class="caret"></span></button>
+                                            class="caret"></span></button>
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item"
                                            href="/user/edit/{{$res->user_id}}"><i
-                                                    class="fa fa-edit"></i> Edit</a>
+                                                class="fa fa-edit"></i> Edit</a>
                                         {{--<a class="dropdown-item"
                                            href="/user/destroy/{{$res->user_id}}" ><i
                                                     class="fa fa-remove"></i> Delete</a>--}}

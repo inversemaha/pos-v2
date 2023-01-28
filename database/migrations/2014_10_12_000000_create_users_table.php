@@ -22,10 +22,11 @@ return new class extends Migration
             $table->text('user_address')->nullable();
             $table->string('user_company')->nullable();
             $table->string('password');
-            $table->integer('user_type')->default(2);
+            $table->integer('user_type');
             $table->unsignedInteger('role_id');
             $table->unsignedInteger('outlet_id')->default(1);
             $table->rememberToken();
+            $table->timestamps();
         });
     }
 

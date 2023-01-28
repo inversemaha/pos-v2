@@ -62,9 +62,11 @@ class UserController extends Controller
             $image_name = 'null.png';
         }
 
+        $request['password'] = Hash::make($request['password']);
+
         $request->request->add(['user_image' => $image_name, 'role_id' => $role_id]);
 
-        //return $request->all();
+        // return $request->all();
 
         try {
             User::create($request->except('image'));
@@ -112,7 +114,7 @@ class UserController extends Controller
             unset($request['password']);//Remove token
         }
 
-
+        $request['password'] = Hash::make($request['password']);
         unset($request['image_name']);//Remove token
         $request->request->add(['user_image' => $image_name]);
 

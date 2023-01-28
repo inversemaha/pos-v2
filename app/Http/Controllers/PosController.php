@@ -37,7 +37,6 @@ class PosController extends Controller
         $products = Product::join('product_details', 'product_details.product_id', '=', 'products.product_id')
             ->get(['products.*',
                 'product_details.product_details_id',
-                'product_details.product_title',
                 'product_details.product_purchase_price',
                 'product_details.product_retail_price',
                 'products.product_category_id'
