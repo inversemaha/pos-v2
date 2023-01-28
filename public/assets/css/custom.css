@@ -1,0 +1,58 @@
+/* angularjs */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+body {
+    background: #EBEFF2;
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: 30px;
+}
+
+.product-list-box img {
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.product-list-box .price-tag {
+    margin-top: -123px;
+}
+
+.product-list-box .price-tag {
+    float: right;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 60px;
+    margin-right: -15px;
+}
+
+.product-list-box img {
+    height: 120px;
+    margin: 0 auto;
+    display: block;
+    background: #e3e9ec;
+}
+a:hover{
+    text-decoration: none;
+}
+.page-title + .breadcrumb {
+    font-size: 14px;
+}
+body{
+    background-color: red;
+}
+.required{
+    color: red;
+}

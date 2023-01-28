@@ -1,0 +1,37 @@
+.red-color{
+    color: red;
+}
+.filterDiv {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.container {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+.btn.active {
+    color: red;
+}
+
+.customer-input{
+    margin: -8px;
+}
+.pos-input{
+    padding: 10px !important;
+}
+
+::placeholder {
+    color: rgba(78, 93, 97, 0.34) !important;
+    opacity: 1; /* Firefox */
+}
