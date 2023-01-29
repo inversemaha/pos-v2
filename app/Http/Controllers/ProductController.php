@@ -89,6 +89,7 @@ class ProductController extends Controller
 
         $product_details_array = array(
             'barcode' => $request['barcode'],
+            'product_title' => $request['product_title'],
             'product_purchase_price' => $request['product_purchase_price'],
             'product_retail_price' => $request['product_retail_price'],
             'outlet_id' => $outlet_id

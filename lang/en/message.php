@@ -37,7 +37,7 @@ return [
     'expensecategories'=>'Expense Categories',
     'productpurchase'=>'Product Purchase',
     'listproductpurchase'=>'List Product Purchase',
-    'newpurchase'=>'New Purchase',
+    'newpurchase'=>'Ingredient Purchase',
     'stock'=>'Stocks',
     'sell'=>'Sell',
     'listsell'=>'List Sell',

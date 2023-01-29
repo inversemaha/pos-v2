@@ -161,7 +161,7 @@ class ReportController extends Controller
                 ->with('from_date',$from_date)
                 ->with('to_date',$to_date);
         } else {
-            $products = DB::table('sell_items')
+             $products = DB::table('sell_items')
                 ->join('product_details', 'product_details.product_id', '=', 'sell_items.product_id')
                 ->select('product_details.product_title')
                 ->groupBy('product_details.product_title')
@@ -170,6 +170,7 @@ class ReportController extends Controller
             $result = SellItem::join('product_details', 'product_details.product_id', '=', 'sell_items.product_id')
                 ->select('sell_items.product_id', 'product_details.product_title', 'sell_items.quantity', 'sell_items.created_at')
                 ->get();
+
             return view('pages.report.product_sell')
                 ->with('products', $products)
                 ->with('result', $result);

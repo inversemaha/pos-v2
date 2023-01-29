@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('product_details', function (Blueprint $table) {
             $table->increments('product_details_id');
+            $table->string('product_title');
             $table->double('product_purchase_price');
             $table->double('product_retail_price');
             $table->unsignedInteger('product_id');
