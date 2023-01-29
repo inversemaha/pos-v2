@@ -78,7 +78,7 @@ class ProductController extends Controller
             $image_name = "null.png";
         }
 
-        $product_array = array(
+         $product_array = array(
             /*   'product_name' => $request['product_name'],*/
             'product_name' => $request['product_title'],
             'product_category_id' => $request['product_category_id'],
@@ -87,7 +87,7 @@ class ProductController extends Controller
             'outlet_id' => $outlet_id
         );
 
-        $product_details_array = array(
+         $product_details_array = array(
             'barcode' => $request['barcode'],
             'product_title' => $request['product_title'],
             'product_purchase_price' => $request['product_purchase_price'],

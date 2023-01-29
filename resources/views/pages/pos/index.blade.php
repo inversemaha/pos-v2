@@ -445,7 +445,7 @@
                         toaster.pop('success', "success: " + response.data.message);
 
                         window.location.href = '/sells/pos/' + response.data.invoice;
-                        // console.log("",response.data.result);
+                         console.log("",response.data.result);
 
                     } else {
                         toaster.pop('error', "failed" + response.data.message);

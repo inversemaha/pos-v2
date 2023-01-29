@@ -88,8 +88,8 @@
                                                 <td>{{$res->product_name}}</td>
                                                 {{-- <td>{{$res->product_title}}</td>--}}
                                                 <td>{{$res->quantity}}</td>
-                                                <td>{{$res->unit_price}} TK</td>
-                                                <td>{{$res->quantity*$res->unit_price}} TK</td>
+                                                <td>{{$res->unit_price}} </td>
+                                                <td>{{$res->quantity*$res->unit_price}} </td>
                                             </tr>
                                         @endforeach
                                         </tbody>
@@ -106,7 +106,7 @@
 
 
                                @isset($prevDue)
-                                Previous Due:{{ $prevDue }}Tk
+                                Previous Due:{{ $prevDue }}
                                @endisset
                                @empty($prevDue)
 
@@ -122,10 +122,10 @@
                                     <div class=" justify-content-end float-right">
                                         <div class="col-md-12">
                                             <p class="text-right">
-                                                <b>Sub-total:</b> {{$details->grand_total_price+$details->discount_amount+$details->total_vat}} TK
+                                                <b>Sub-total:</b> {{$details->grand_total_price+$details->discount_amount+$details->total_vat}}
                                             </p>
-                                            <p class="text-right"><b>Discout:</b> {{$details->discount_amount}} TK</p>
-                                            <p class="text-right"><b>VAT: </b> {{$details->total_vat}} TK</p>
+                                            <p class="text-right"><b>Discout:</b> {{$details->discount_amount}} </p>
+                                            <p class="text-right"><b>VAT: </b> {{$details->total_vat}} </p>
                                             <p class="text-right"><b>Due: </b>
                                                 @if($details->paid_status==1) 0
 
@@ -134,7 +134,7 @@
                                                 @endif
                                             </p>
                                             <hr>
-                                            <h3 class="text-right">Grand Total: {{$details->grand_total_price}} TK</h3>
+                                            <h3 class="text-right">Grand Total: {{$details->grand_total_price}} </h3>
                                         </div>
                                     </div>
                                 </div>
